@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu ul {
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu img {
+    max-height: 80px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.home {
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home img {
+    width: 100%;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.corte,
+.cor,
+.UNIDADES {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.corte img,
+.cor img,
+.UNIDADES img {
+    width: 45%;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.corte p,
+.cor p,
+.UNIDADES p {
+    max-width: 45%;
+    text-align: left;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cor {
+    flex-direction: row-reverse;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid wheat;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.answer {
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.toggle-button {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    margin: 10px 0;
+    color: whitesmoke;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+h1 {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#agradecimento {
+    margin-top: 35px;
+}
+
+footer {
+    background-color: gray;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKStyle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><img src="https://artpoin.com/wp-content/uploads/2023/09/artpoin-logo-cabelereira1.png"></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#corte">CORTE</a></li>
+            <li><a href="#cor">COR</a></li>
+            <li><a href="#UNIDADES">NOSSAS UNIDADES</a></li>
+            <li><a href="#agendamentos">AGENDE</a></li>
+        </ul>
+    </div>
+
+    <div class="home" id="home">
+        <img src="https://i.pinimg.com/736x/f4/4d/45/f44d45d8f3ac33617c60433d93f4cfe2.jpg"
+            alt="Imagem da Home">
+    </div>
+
+    <div class="corte" id="corte">
+        <img src="https://i.pinimg.com/564x/fa/65/3c/fa653cc26f78c1c332e17d363f5c26f9.jpg"
+            alt="Tipos de cortes">
+        <p>CORTE<br><br>
+            PEQUENO: 45R$<br><br>
+            MÉDIO: 60R$<br><br>
+            GRANDE: 85R$<br><br>
+            BEM-VINDO AO NOSSO ESPAÇO DE ESTILO, NÓS OFERECEMOS QUALQUER CORTE QUE O CLIENTE TENHA INTERESSE EM
+            REALIZAR.<br></p>
+    </div>
+
+    <div class="cor" id="cor">
+        <img src="https://i.pinimg.com/564x/87/bf/2c/87bf2c00c2f3d481e3b80e02ac004077.jpg"
+            alt="TONS">
+        <p>COR<br><br>
+             R$: VARIA DEPENDENDO DO COMPRIMENTO<BR><BR>
+            BEM-VINDO AO NOSSO ESPAÇO DE ESTILO, NÓS OFERECEMOS TODAS AS COLORIMETRIAS CAPILARES QUE O CLIENTE TENHA INTERESSE EM
+            REALIZAR.<br></p>
+    </div>
+
+    <div class="UNIDADES" id="UNIDADES">
+        <img src="https://i.pinimg.com/564x/09/09/85/090985f71be62a73ade867067214a038.jpg" alt="">
+        <p>NOSSAS UNIDADES<br><br>
+            ATUALMENTE CONTAMOS COM APENAS 1 UNIDADE DE NOSSO SALÃO, ELE FICA LOCALIZADO NA RUA PEDRO GUSSO 5820.
+            <BR>
+            ESTAMOS ABERTOS DAS 10:00 ÀS 20:00.
+        </p>
+    </div>
+
+    <div id="agende" h1 onclick="mostrarFormulario()">Agende Seu Horário Aqui</h1></div>
+
+    <form id="agendamento-form">
+        <label for="nome">Qual o seu nome?</label>
+        <input type="text" id="nome" required>
+
+        <label for="dias">O seu agendamento fica para quantos dias?</label>
+        <input type="number" id="dias" required>
+
+        <label for="horario">Horário desejado do agendamento?</label>
+        <input type="text" id="horario" required>
+
+        <label for="servico">O que o deseja transformar em seu visual?</label>
+        <select id="servico" required>
+            <option value="corte">Corte</option>
+            <option value="cor">Cor</option>
+            <option value="progressiva|selagem">progressiva|selagem</option>
+        </select>
+
+        <button type="button" onclick="confirmeAgendamento()">Confirme seu Agendamento</button>
+    </form>
+
+    <div id="agradecimento" style="display: none; margin-top: 20px;">
+        <h2>Muito Obrigada por Agendar!</h2>
+        <p>Seu agendamento foi confirmado. Aguardamos por você!</p>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 MKStyle<br><br>
+            Página feita e pensada por Kauany|Maria Board.<br>
+            CONTATOS:<br>
+            telefone: 41 995864712<br>
+        </p>
+
+    </footer>
+    </div>
+    <script>
+        function mostrarFormulario() {
+            const form = document.getElementById('agendamento-form');
+            const h1 = document.querySelector('h1');
+
+            form.style.display = 'flex';
+            h1.style.display = 'none';
+        }
+
+        function confirmeAgendamento() {
+            const form = document.getElementById('agendamento-form');
+            const agradecimentoDiv = document.getElementById('agradecimento');
+
+            form.style.display = 'none';
+            agradecimentoDiv.style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
